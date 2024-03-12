@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #3498DB 0%, #8E44AD 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 410px;
+    background: white;
+    border-radius: 7px;
+    padding: 20px 25px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #3498DB;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 5px;
+    color: #575757;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form input,
+.form button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form input {
+    font-size: 18px;
+    padding: 0 17px;
+    border: 1px solid #999;
+}
+
+.form input:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.form input::placeholder {
+    color: #999;
+}
+
+.form button {
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    background: #3498DB;
+}
+
+.qr-code {
+    opacity: 0;
+    display: flex;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.container.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+
+.qr-code img {
+    width: 100%;
+    max-width: 170px;
+}
+
+#downloadBtn {
+    display: none;
+    background: #5cdb5c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin: auto;
+    border-radius: 5px;
+    width: 25%;
+}
+
+#downloadBtn i {
+    margin-right: 8px;
+}
+
+i {
+    font-size: 20px;
+}
+
+.form button#clearBtn {
+    background: #E74C3C;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.form button#clearBtn i {
+    margin-right: 8px;
+    font-size: 20px;
+}
